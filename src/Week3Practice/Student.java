@@ -5,27 +5,53 @@ public class Student {
     private String name;
     private double score;
     private String grade;
+
+    private String scoreToGrade(){
+        if (this.score >= 95){
+            return "A+";
+        } else if (this.score >= 90) {
+            return "A";
+        } else if (this.score >= 85) {
+            return "B+";
+        } else if (this.score >= 80) {
+            return "B";
+        } else if (this.score >= 75) {
+            return "C+";
+        } else if (this.score >= 70) {
+            return "C";
+        } else if (this.score >= 65) {
+            return "D+";
+        } else if (this.score >= 60) {
+            return "D";
+        } else if (this.score >= 55) {
+            return "E+";
+        } else if (this.score >= 50) {
+            return "E";
+        } else {
+            return "F";
+        }
+    }
     /*Static*/
     /*Constructor*/
-    public Student(String name, double score, String grade){
+    public Student(String name, double score){
         this.name = name;
         this.score = score;
-        this.grade = grade;
+        this.grade = scoreToGrade();
     }
     public Student(){
         this.name = "anonymous";
         this.score = 0;
-        this.grade = "F";
+        this.grade = scoreToGrade();
     }
     /*Public*/
-    public void setter(String name, double score, String grade){
+    public void setter(String name, double score){
         this.name = name;
         this.score = score;
-        this.grade = grade;
+        this.grade = scoreToGrade();
     }
-    public void setScore(double score, String grade){
+    public void setScore(double score){
         this.score = score;
-        this.grade = grade;
+        this.grade = scoreToGrade();
     }
     /*ToString*/
     public String toString(){
