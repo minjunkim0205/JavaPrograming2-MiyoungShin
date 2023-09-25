@@ -8,7 +8,11 @@ public class AnimalTest {
                 new Cat(),
                 new Dog(),
                 new Dog("Rock")
+        };
+        for(Animal ani : pets){
+            System.out.print("\n"+ani+"_"+ani.reaction(ani));
+            ani.sound();
         }
-        for
+        System.out.print("\n\nPet들 중 Dog는 "+Dog.getCountDog()+"마리\n");
     }
 }
