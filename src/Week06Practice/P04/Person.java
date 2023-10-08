@@ -11,16 +11,20 @@ public class Person implements IComparable{
         this.height = height;
     }
     /*Abstract*/
-    public int compareTo(Person other) {
-        if (this.height > other.height) {
+    public double compareTo(Object other) {
+        Person p = (Person)other;
+        if (this.height > p.getHeight()) {
             return 1;
-        } else if(this.height < other.height) {
+        } else if(this.height < p.getHeight()) {
             return -1;
         } else {
             return 0;
         }
     }
     /*Public*/
+    public double getHeight(){
+        return (this.height);
+    }
     /*ToString*/
     public String toString() {
         return ("Person [name="+this.name+", height="+this.height+"]");
