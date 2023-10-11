@@ -13,7 +13,7 @@ public class Person implements IComparable{
     /*Abstract*/
     public double compareTo(Object other) {
         Person p = (Person)other;
-        if (this.height > p.getHeight()) {
+        if(this.height > p.getHeight()) {
             return 1;
         } else if(this.height < p.getHeight()) {
             return -1;
