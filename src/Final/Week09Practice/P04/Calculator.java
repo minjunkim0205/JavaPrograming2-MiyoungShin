@@ -16,7 +16,7 @@ public class Calculator {//정적 인터페이스 멤버를 갖는 Calculator �
     public void compute(int a, int b) {
         cal.run(a, b);
     }
-    public void setControl(Control){
+    public void setControl(Control control){
 
     }
     /*Interface*/
