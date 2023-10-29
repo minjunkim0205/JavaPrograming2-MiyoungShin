@@ -5,7 +5,8 @@ public class Add implements Calculator.Control {
     /*Constructor*/
     /*Method*/
     public void run(int a, int b) {
-
+        int result = (a+b);
+        System.out.print(a+" + "+b+" = "+result+"\n");
     }
     /*ToString*/
 }

@@ -5,7 +5,11 @@ public class Exp implements Calculator.Control{
     /*Constructor*/
     /*Method*/
     public void run(int a, int b) {
-
+        int result = 1;
+        for(int i = 0; i < b; i++){
+            result *= a;
+        }
+        System.out.print(a+" ** "+b+" = "+result+"\n");
     }
     /*ToString*/
 }
