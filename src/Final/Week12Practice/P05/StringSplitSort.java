@@ -11,7 +11,7 @@ public class StringSplitSort{
         StringTokenizer string_tokenizer = new StringTokenizer(input.nextLine(), " ");
 
         String[] result = new String[string_tokenizer.countTokens()];
-        for(int i = 0; i < string_tokenizer.countTokens(); i++){ // todo 
+        for(int i = 0; i < result.length; i++){
             result[i] = string_tokenizer.nextToken();
         }
 
