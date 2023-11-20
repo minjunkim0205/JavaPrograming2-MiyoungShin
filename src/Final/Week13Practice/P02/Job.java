@@ -1,6 +1,7 @@
 package Final.Week13Practice.P02;
 
 class Job extends Thread{
+    @Override
     public void run() {
         int n = 0;
         while(true){
