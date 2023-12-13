@@ -10,7 +10,7 @@ public class Person {
     public boolean equals(final Person person) {
         if(name.equals(person.name) && age == person.age) {
             return (true);
-        } else{
+        }else {
             return (false);
         }
     }

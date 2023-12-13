@@ -12,14 +12,14 @@ public class FindIndex {
 
         System.out.print("===== indexOf() 메소드 사용 =====\n");
         int ans1 = str.indexOf(find);
-        if (ans1 == -1) {
+        if(ans1 == -1) {
             System.out.print("해당 문자가 없습니다\n");
-        } else {
+        }else {
             System.out.print(find + " 인덱스는 " + ans1 + " 입니다\n");
         }
         System.out.print("===== charAt() 메소드 사용 =====\n");
         int cnt = 0;
-        for (int i = 0; i < str.length(); i++) {
+        for(int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == find) {
                 cnt = i;
                 break;

@@ -15,11 +15,11 @@ public class LoginExample {
     }
     public static void login(final String id, final int password) throws WrongPasswordException, NotExistIDException{
         //id가 blue가 아니라면 NotExistIDException 발생시킴
-        if(!(id.equals("blue"))){
+        if(!(id.equals("blue"))) {
             throw (new NotExistIDException("id가 틀렸습니다."));// throw (new NotExistIDException());
         }
         //password가 12345가 아니라면 WrongPasswordException 발생시킴
-        if(!(password == 12345)){
+        if(!(password == 12345)) {
             throw (new WrongPasswordException("password가 틀렸습니다."));// throw (new WrongPasswordException());
         }
     }

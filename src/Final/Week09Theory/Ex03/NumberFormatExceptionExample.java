@@ -13,7 +13,6 @@ public class NumberFormatExceptionExample {
     }
 }
 /*
-
 Exception in thread "main" java.lang.NumberFormatException: For input string: "a100"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
 	at java.base/java.lang.Integer.parseInt(Integer.java:665)
@@ -21,5 +20,4 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "a
 	at Final.Week09Theory.Ex03.NumberFormatExceptionExample.main(NumberFormatExceptionExample.java:9)
 
 종료 코드 1(으)로 완료된 프로세스
-
  */

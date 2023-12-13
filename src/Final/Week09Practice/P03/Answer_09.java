@@ -2,7 +2,7 @@ package Final.Week09Practice.P03;
 
 public class Answer_09 {
     public static void main(String[] args) {
-        Func1 sum = (a, b) -> a+b;
+        Func1 sum = (a, b) -> a + b;
         Func1 minus = (a, b) -> a - b;
         Func1 multiply = (a, b) -> a*b;
         Func1 exponent = (a, b) -> {
